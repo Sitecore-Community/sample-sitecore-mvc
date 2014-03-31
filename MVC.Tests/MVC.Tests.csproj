@@ -97,6 +97,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\DriverControllerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -104,6 +105,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MVC.Data\MVC.Data.csproj">
+      <Project>{93b9bb50-f423-44b9-b50d-3dcac0756b17}</Project>
+      <Name>MVC.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MVC\MVC.Tutorial.csproj">
+      <Project>{11c0461d-1e81-43c9-b65f-c17e681755da}</Project>
+      <Name>MVC.Tutorial</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
