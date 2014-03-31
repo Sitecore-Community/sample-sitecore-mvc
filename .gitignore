@@ -1,0 +1,9 @@
+/MVC.Tests/bin/Debug
+/MVC.Tests/obj/Debug
+/MVC.Tests/obj/Release
+/*.suo
+/MVC/Properties/PublishProfiles/*.pubxml
+/MVC/Properties/PublishProfiles/*.user
+/MVC/*.user
+/MVC/obj/Debug
+/MVC/obj/Release
