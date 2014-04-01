@@ -151,6 +151,58 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="App_Config\Include\Serialization.config" />
+    <Content Include="App_Data\serialization\master\sitecore\content\Home.item" />
+    <Content Include="App_Data\serialization\master\sitecore\content\Home\colin-mcrae.item" />
+    <Content Include="App_Data\serialization\master\sitecore\content\Home\kimi-raikkonen.item" />
+    <Content Include="App_Data\serialization\master\sitecore\content\Home\lancia-delta-integrale.item" />
+    <Content Include="App_Data\serialization\master\sitecore\content\Home\mazda-mx-5.item" />
+    <Content Include="App_Data\serialization\master\sitecore\content\Home\mitsubishi-lancer-evolution-vi.item" />
+    <Content Include="App_Data\serialization\master\sitecore\content\Home\nurburgring.item" />
+    <Content Include="App_Data\serialization\master\sitecore\content\Home\oulton-park.item" />
+    <Content Include="App_Data\serialization\master\sitecore\content\Home\peugot-306.item" />
+    <Content Include="App_Data\serialization\master\sitecore\content\Home\silverstone.item" />
+    <Content Include="App_Data\serialization\master\sitecore\content\Home\swedish-touring-car-championship.item" />
+    <Content Include="App_Data\serialization\master\sitecore\layout\Layouts\MVC Layout.item" />
+    <Content Include="App_Data\serialization\master\sitecore\layout\Renderings\MVC Tutorial.item" />
+    <Content Include="App_Data\serialization\master\sitecore\layout\Renderings\MVC Tutorial\Content.item" />
+    <Content Include="App_Data\serialization\master\sitecore\layout\Renderings\MVC Tutorial\Email.item" />
+    <Content Include="App_Data\serialization\master\sitecore\layout\Renderings\MVC Tutorial\Featured Car.item" />
+    <Content Include="App_Data\serialization\master\sitecore\layout\Renderings\MVC Tutorial\Featured Circuit.item" />
+    <Content Include="App_Data\serialization\master\sitecore\layout\Renderings\MVC Tutorial\Featured Driver.item" />
+    <Content Include="App_Data\serialization\master\sitecore\layout\Renderings\MVC Tutorial\Rating.item" />
+    <Content Include="App_Data\serialization\master\sitecore\layout\Renderings\MVC Tutorial\Spotlight.item" />
+    <Content Include="App_Data\serialization\master\sitecore\layout\Renderings\MVC Tutorial\Three Columns.item" />
+    <Content Include="App_Data\serialization\master\sitecore\media library\Images.item" />
+    <Content Include="App_Data\serialization\master\sitecore\media library\Images\lancia.item" />
+    <Content Include="App_Data\serialization\master\sitecore\media library\Images\Mitsubishi-Lancer-Evolution_röd.item" />
+    <Content Include="App_Data\serialization\master\sitecore\media library\Images\mx5.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Car.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Car\Car Details.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Car\Car Details\Description.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Car\Car Details\Image.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Car\Car Details\Make.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Car\Car Details\Model.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Car\Car Details\Website.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Car\__Standard Values.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Driver.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Driver\Driver.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Driver\Driver\Name.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Driver\Driver\Text.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Home.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Home\Content.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Home\Content\Image.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Home\Content\Text.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Home\Content\Title.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Home\__Standard Values.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Race Circuit.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Race Circuit\Driver.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Race Circuit\Driver\Name.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Race Circuit\Driver\Text.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Race Series.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Race Series\Driver.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Race Series\Driver\Name.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Race Series\Driver\Text.item" />
     <None Include="Properties\PublishProfiles\MVC.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
@@ -166,7 +218,6 @@
     <Content Include="Views\Driver\Featured.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="App_Start\" />
   </ItemGroup>
   <ItemGroup>
