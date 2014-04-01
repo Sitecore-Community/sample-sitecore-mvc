@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Kamsar.WebConsole</id>
+    <version>1.2.2.0</version>
+    <title>Kamsar.WebConsole</title>
+    <authors>Kam Figy</authors>
+    <owners>Kam Figy</owners>
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>https://github.com/kamsar/Kamsar.WebConsole</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A library to create a Web-based, live updating "console" window. Useful for pages that process some sort of background task like an index rebuild or database backup. Compatible with MVC or Web Forms.</description>
+    <releaseNotes>Added TeeProgressStatus - allows multiple progress objects to be written to by a proxy</releaseNotes>
+    <copyright>Copyright 2013</copyright>
+    <tags>web console</tags>
+    <references>
+      <reference file="Kamsar.WebConsole.dll" />
+    </references>
+  </metadata>
+</package>
