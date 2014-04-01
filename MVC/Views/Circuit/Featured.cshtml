@@ -1,7 +1,10 @@
-﻿@model MVC.Tutorial.Models.Circuit
+﻿@model MVC.Data.Models.Circuit
 
-<div class="highlight">
-    Name: @Model.Name
-    <br />
-    Text: @Model.Text
+<!-- To set the 'Background' parameter, go into the Page Editor > select 'Design' mode, click on the Featured Cuircuit component > 
+    click More > click Edit component properties > Scroll down to the 'Parameters' section -->
+
+<div class="highlight" style="background: #@Model.Rendering.Parameters["Background"]">
+    <h3>This week's featured circuit</h3>
+    <p><strong>Name:</strong> @Model.Name</p>
+    <strong>Text:</strong> @Model.Text
 </div>

@@ -14,11 +14,11 @@ namespace MVC.Tests.Controllers
     public class DriverControllerTest
     {
         [TestMethod]
-        public void TestDetailsView()
+        public void TestFeaturedView()
         {
             var controller = new DriverController(new TestDriverRepository());
             var result = controller.Featured() as ViewResult;
-            Assert.AreEqual("Featured", result.ViewName);
+            Assert.AreEqual("DriverViewModel", result.Model.GetType().Name);
         }
     }
 }

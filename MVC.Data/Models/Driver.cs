@@ -14,5 +14,6 @@ namespace MVC.Data.Models
     {
         public HtmlString Name { get; set; }
         public HtmlString Text { get; set; }
+        public HtmlString Image { get; set; }
     }
 }

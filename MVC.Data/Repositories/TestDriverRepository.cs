@@ -1,4 +1,5 @@
 ﻿using MVC.Data.Models;
+using Sitecore.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,9 +8,12 @@ using System.Threading.Tasks;
 
 namespace MVC.Data.Repositories
 {
+    /// <summary>
+    /// This is a test repository - you could inject this into your controller if your Sitecore implementation is not ready
+    /// to be used as a data source.
+    /// </summary>
     public class TestDriverRepository : IDriverRepository
     {
-
         public Models.Driver GetDriver()
         {
             Driver driver = new Driver();
@@ -20,7 +24,7 @@ namespace MVC.Data.Repositories
             return driver;
         }
 
-        public Models.DriverViewModel GetDriverViewModel(Models.Driver driver)
+        public Models.DriverViewModel GetDriverViewModel(Driver driver)
         {
             DriverViewModel driverViewModel = new DriverViewModel();
 

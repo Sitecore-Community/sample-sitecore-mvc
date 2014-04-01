@@ -39,8 +39,6 @@ namespace MVC.Tutorial.Controllers
         {
             var repository = _driverRepository;
 
-            var driver = repository.GetDriver();
-
             // Technically, models should only contain data about that model - for example, the Driver model only contains the driver's
             // name and description. It should not contain additional information requried by the View Rendering, such as the background
             // colour or font size. 
@@ -48,6 +46,7 @@ namespace MVC.Tutorial.Controllers
             // In this example, the Controller Rendering has a number of parameters that the author can pick from, including Background Colour.
             // We use the repository to return a DriverViewModel, which is populated with the author's choices, rather than cramming that
             // information into the Driver model, where it does not belong.
+            var driver = repository.GetDriver();
             var driverViewModel = repository.GetDriverViewModel(driver);
 
             return View(driverViewModel);
