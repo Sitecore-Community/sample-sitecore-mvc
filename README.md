@@ -53,3 +53,8 @@ All listed renderings are Page Editor and DMS friendly (each reads from a dataso
 * Controller rendering, utilises a custom Circuit model
 * Corresponding CircuitController
 * The Circuit model inherits from Sitecore's default RenderingModel, and the controller demonstrates how to pass the context rendering into the ```Initialize()``` method to populate it
+
+## Image credits
+* Mitsubishi Lancer Evolution VI: http://www.motorsbros.com/opt-speed-Mitsubishi-Lancer-Evolution-VI.html
+* Lancia Delta Integrale: http://maydaygarage.com/2011/06/01/nostalgic-wednesdays1987-lancia-delta-integrale/
+* Mazda MX5 MK3: http://www.whatcar.com/car-news/mazda-mx-5-rust-problem/1214652
