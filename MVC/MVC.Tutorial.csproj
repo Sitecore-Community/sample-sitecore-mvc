@@ -137,6 +137,7 @@
   <ItemGroup>
     <Compile Include="Controllers\CircuitController.cs" />
     <Compile Include="Controllers\DriverController.cs" />
+    <Compile Include="Controllers\LocationController.cs" />
     <Compile Include="Helpers\SitecoreFieldHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -216,6 +217,7 @@
     <Content Include="Views\layouts\Featured Car.cshtml" />
     <Content Include="Views\Circuit\Featured.cshtml" />
     <Content Include="Views\Driver\Featured.cshtml" />
+    <Content Include="Views\Location\Featured.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Start\" />

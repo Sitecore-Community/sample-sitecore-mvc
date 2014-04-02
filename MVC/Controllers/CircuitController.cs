@@ -25,7 +25,7 @@ namespace MVC.Tutorial.Controllers
             // The RenderingModel base class has an Initialize() method that expects the context rendering. By using .Initialize(), 
             // you make other properties - such as .Item, which represents the rendering's datasource - available. Notice that because
             // we are using RenderingContext.Current.Rendering directly in this Controller, we have a dependency on Sitecore.
-            circuit.Initialize(RenderingContext.Current.Rendering);            
+            circuit.Initialize(RenderingContext.Current.Rendering);        
 
             return View(circuit);
         }

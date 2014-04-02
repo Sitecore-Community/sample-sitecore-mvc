@@ -47,15 +47,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="References.cs" />
+    <Compile Include="Domain\ILocationDomain.cs" />
+    <Compile Include="Domain\LocationDomain.cs" />
     <Compile Include="Models\Car.cs" />
     <Compile Include="Models\Circuit.cs" />
     <Compile Include="Models\Driver.cs" />
+    <Compile Include="Models\Location.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\FakeRepository.cs" />
     <Compile Include="Repositories\DriverRepository.cs" />
     <Compile Include="Repositories\IDriverRepository.cs" />
+    <Compile Include="Repositories\ISitecoreRepository.cs" />
+    <Compile Include="Repositories\SitecoreRepository.cs" />
     <Compile Include="Repositories\TestDriverRepository.cs" />
     <Compile Include="ViewModels\DriverViewModel.cs" />
+    <Compile Include="ViewModels\LocationViewModel.cs" />
+    <Compile Include="Wrappers\ItemWrapper.cs" />
+    <Compile Include="Wrappers\PageContextWrapper.cs" />
+    <Compile Include="Wrappers\RenderingContextWrapper.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
