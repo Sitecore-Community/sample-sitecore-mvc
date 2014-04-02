@@ -54,6 +54,10 @@ All listed renderings are Page Editor and DMS friendly (each reads from a dataso
 * Corresponding CircuitController
 * The Circuit model inherits from Sitecore's default RenderingModel, and the controller demonstrates how to pass the context rendering into the ```Initialize()``` method to populate it
 
+## Interesting points
+### Using /Shared/_Layout.cshtml
+In standard MVC, views can be set up to use a shared *MVC layout* (not to be confused with a Sitecore layout) to reduce duplication. In your view, you set the 'Layout' property to your MVC layout's path. That view will then be inserted into the ```@RenderBody()``` of the shared layout. However, Sitecore also has the concept of a layout, which is essentially the 'base view' into which you insert smaller view or controller renderings by assignign them to placeholders. All your page scaffolding (like the ```<head>``` of the page) can go into the Sitecore layout, and you do not need a shared MVC 'layout' at all. However, if you *did* want to set the 'Layout' property inside your view, Sitecore will not stop you - ```@RenderBody()``` will still work **when used inside the layout view, not inside renderings***.
+
 ## Image credits
 * Mitsubishi Lancer Evolution VI: http://www.motorsbros.com/opt-speed-Mitsubishi-Lancer-Evolution-VI.html
 * Lancia Delta Integrale: http://maydaygarage.com/2011/06/01/nostalgic-wednesdays1987-lancia-delta-integrale/

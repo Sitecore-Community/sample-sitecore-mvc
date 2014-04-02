@@ -23,3 +23,5 @@
 /MVC.Data/bin/Release
 /MVC/bin/MVC.Tutorial.dll
 /MVC/bin/MVC.Tutorial.pdb
+/Libraries/Sitecore.Kernel.dll
+/Libraries/Sitecore.Mvc.dll
