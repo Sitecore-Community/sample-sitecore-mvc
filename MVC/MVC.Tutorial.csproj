@@ -203,6 +203,14 @@
     <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Race Series\Driver.item" />
     <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Race Series\Driver\Name.item" />
     <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Race Series\Driver\Text.item" />
+    <Content Include="App_Data\serialization\master\sitecore\layout\Models\Car.item" />
+    <Content Include="App_Data\serialization\master\sitecore\layout\Placeholder Settings\content.item" />
+    <Content Include="App_Data\serialization\master\sitecore\layout\Placeholder Settings\leftcol.item" />
+    <Content Include="App_Data\serialization\master\sitecore\layout\Placeholder Settings\main.item" />
+    <Content Include="App_Data\serialization\master\sitecore\layout\Placeholder Settings\middlecol.item" />
+    <Content Include="App_Data\serialization\master\sitecore\layout\Placeholder Settings\rightcol.item" />
+    <Content Include="App_Data\serialization\master\sitecore\layout\Placeholder Settings\webedit.item" />
+    <Content Include="App_Data\serialization\master\sitecore\layout\Models.item" />
     <None Include="Properties\PublishProfiles\MVC.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
