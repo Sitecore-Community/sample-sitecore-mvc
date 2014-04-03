@@ -7,6 +7,7 @@ namespace MVC.Data.Domain
     {
         string GetBackground();
         MVC.Data.Models.Location GetLocation(ItemWrapper item, System.Collections.Generic.Dictionary<string, string> parameterDictionary);
+        MVC.Data.Models.Location GetLocation(ItemWrapper item);
         string GetFieldParameters(string fieldName, Dictionary<string, string> parameterDictionary);
     }
 }

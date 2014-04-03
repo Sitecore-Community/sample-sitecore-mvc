@@ -25,3 +25,7 @@
 /MVC/bin/MVC.Tutorial.pdb
 /Libraries/Sitecore.Kernel.dll
 /Libraries/Sitecore.Mvc.dll
+/MVC/bin/Castle.Core.dll
+/MVC/bin/Castle.Core.xml
+/MVC/bin/Castle.Windsor.dll
+/MVC/bin/Castle.Windsor.xml

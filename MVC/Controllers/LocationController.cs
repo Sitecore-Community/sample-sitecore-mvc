@@ -27,7 +27,9 @@ namespace MVC.Tutorial.Controllers
             var pageContext = new PageContextWrapper();
             var renderingContext = new RenderingContextWrapper();
 
-            return View();
+            viewModel.Location = _locationDomain.GetLocation(renderingContext.Item);
+
+            return View(viewModel);
         }
     }
 }

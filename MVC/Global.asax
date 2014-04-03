@@ -2,8 +2,22 @@
 
 <script runat="server">
   public void Application_Start() {
+      BootstrapContainer();      
   }
+  
+  private static Castle.Windsor.IWindsorContainer container;
 
+  public static void BootstrapContainer()
+  {
+      container = new Castle.Windsor.WindsorContainer().Install(Castle.Windsor.Installer.FromAssembly.This());
+
+      var controllerFactory = new MVC.Tutorial.IoC.WindsorControllerFactory(container.Kernel);
+
+      System.Web.Mvc.ControllerBuilder.Current.SetControllerFactory(controllerFactory);
+
+      container.Install(new MVC.Tutorial.IoC.Installers.DefaultInstallers());
+  }
+  
   public void Application_End() {
   }
 

@@ -34,7 +34,7 @@ namespace MVC.Data.Domain
                 {
                     location = new Location();
 
-                    location.Title = new System.Web.HtmlString(GetField("Title", item, parametersDictionary));
+                    location.Title = new System.Web.HtmlString(GetField("Name", item, parametersDictionary));
                     location.Text = new System.Web.HtmlString(GetField("Description", item, parametersDictionary));
 
                     return location;
@@ -59,13 +59,16 @@ namespace MVC.Data.Domain
         {
             if (!String.IsNullOrEmpty(fieldName))
             {
-                if (parameterDictionary.ContainsKey(fieldName))
+                if (parameterDictionary != null && parameterDictionary.Count() > 0)
                 {
-                    var queryString = parameterDictionary[fieldName];
-
-                    if (!String.IsNullOrEmpty(queryString))
+                    if (parameterDictionary.ContainsKey(fieldName))
                     {
-                        return queryString;
+                        var queryString = parameterDictionary[fieldName];
+
+                        if (!String.IsNullOrEmpty(queryString))
+                        {
+                            return queryString;
+                        }
                     }
                 }
             }
@@ -89,12 +92,31 @@ namespace MVC.Data.Domain
                     {
                         string fieldParameters = GetFieldParameters(fieldName, parameters);
 
-                        _sitecoreRepository.GetField(fieldName, item, fieldParameters);
+                        if (!String.IsNullOrEmpty(fieldParameters))
+                        {
+
+                            _sitecoreRepository.GetField(fieldName, item, fieldParameters);
+                        }
+                        else
+                        {
+                            _sitecoreRepository.GetField(fieldName, item);
+                        }
                     }
                 }         
             }
 
             return String.Empty;
+        }
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="item"></param>
+        /// <returns></returns>
+        public Location GetLocation(ItemWrapper item)
+        {
+            return GetLocation(item, null);
         }
     }
 }

@@ -12,12 +12,18 @@ namespace MVC.Data.Wrappers
         RenderingContext _renderingContext;
         public RenderingContextWrapper()
         {
+            Item = new ItemWrapper();
+
             if (RenderingContext.CurrentOrNull != null)
             {
                 _renderingContext = RenderingContext.CurrentOrNull;
-            }
+                
+                if (_renderingContext.Rendering.Item != null)
+                {
+                    Item.Item = _renderingContext.Rendering.Item;
+                }
 
-            Item = new ItemWrapper();
+            }
         }
 
         public ItemWrapper Item { get; set; }
