@@ -35,7 +35,7 @@ namespace MVC.Data.Domain
                     location = new Location();
 
                     location.Title = new System.Web.HtmlString(GetField("Name", item, parametersDictionary));
-                    location.Text = new System.Web.HtmlString(GetField("Description", item, parametersDictionary));
+                    location.Text = new System.Web.HtmlString(GetField("Text", item, parametersDictionary));
 
                     return location;
                 }
@@ -82,24 +82,23 @@ namespace MVC.Data.Domain
         /// <param name="fieldName"></param>
         /// <param name="parameters"></param>
         /// <returns></returns>
-        private string GetField(string fieldName, ItemWrapper item, Dictionary<string, string> parameters)
+        public string GetField(string fieldName, ItemWrapper item, Dictionary<string, string> parameters)
         {
             if (item != null)
             {
                 if (!String.IsNullOrEmpty(fieldName))
                 {
-                    if (item.Fields[fieldName] != null)
+                    if (_sitecoreRepository.FieldExists(fieldName, item))
                     {
                         string fieldParameters = GetFieldParameters(fieldName, parameters);
 
                         if (!String.IsNullOrEmpty(fieldParameters))
                         {
-
-                            _sitecoreRepository.GetField(fieldName, item, fieldParameters);
+                            return _sitecoreRepository.GetFieldValue(fieldName, item, fieldParameters);
                         }
                         else
                         {
-                            _sitecoreRepository.GetField(fieldName, item);
+                            return _sitecoreRepository.GetFieldValue(fieldName, item);
                         }
                     }
                 }         

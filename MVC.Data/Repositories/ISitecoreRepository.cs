@@ -9,7 +9,8 @@ namespace MVC.Data.Repositories
 {
     public interface ISitecoreRepository
     {
-        string GetField(string fieldName, ItemWrapper item, string parameters);
-        string GetField(string fieldName, ItemWrapper item);
+        string GetFieldValue(string fieldName, ItemWrapper item, string parameters);
+        string GetFieldValue(string fieldName, ItemWrapper item);
+        bool FieldExists(string fieldName, ItemWrapper item);
     }
 }

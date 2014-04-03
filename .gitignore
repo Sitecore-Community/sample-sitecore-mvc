@@ -33,3 +33,7 @@
 /Libraries/Sitecore.Mvc.dll
 /MVC/bin/MVC.dll
 /MVC/bin/MVC.pdb
+/Libraries/Sitecore.Logging.dll
+/MVC/bin/Sitecore.Kernel.dll
+/MVC/bin/Sitecore.Logging.dll
+/MVC/bin/Sitecore.Mvc.dll

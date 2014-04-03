@@ -29,6 +29,16 @@ namespace MVC.Tutorial.Controllers
 
             viewModel.Location = _locationDomain.GetLocation(renderingContext.Item);
 
+            if (viewModel.Location == null)
+            {
+                if (pageContext.IsPageEditor)
+                {
+                    return Content("<p>No location specified!");
+                }
+
+                return Content("");
+            }
+
             return View(viewModel);
         }
     }

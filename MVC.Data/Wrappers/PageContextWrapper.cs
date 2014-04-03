@@ -13,7 +13,29 @@ namespace MVC.Data.Wrappers
 
         public PageContextWrapper()
         {
+            if (PageContext.CurrentOrNull != null)
+            {
+                _pageContext = PageContext.CurrentOrNull;
+            }
         }
 
+        private bool _isPageEditor;
+        public bool IsPageEditor
+        {
+            get
+            {
+                if (_pageContext != null)
+                {
+                    _isPageEditor = Sitecore.Context.PageMode.IsPageEditor;
+                }
+
+                return _isPageEditor;
+            }
+            set
+            {
+                _isPageEditor = value;
+            }
+        }
+        
     }
 }

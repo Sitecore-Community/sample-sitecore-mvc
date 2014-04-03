@@ -1,5 +1,6 @@
 ﻿using Sitecore.Collections;
 using Sitecore.Data;
+using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 using System;
 using System.Collections.Generic;
@@ -34,7 +35,7 @@ namespace MVC.Data.Wrappers
             }
             set
             {
-                value = _displayName;
+                _displayName = value;
             }
         }
 
@@ -47,11 +48,12 @@ namespace MVC.Data.Wrappers
                 {
                     _templateID = Item.TemplateID;
                 }
+
                 return _templateID;
             }
             set
             {
-                value = _templateID;
+                _templateID = value;
             }
         }
 

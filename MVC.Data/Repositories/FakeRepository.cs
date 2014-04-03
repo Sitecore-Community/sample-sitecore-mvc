@@ -10,14 +10,24 @@ namespace MVC.Data.Repositories
 {
     public class FakeRepository : ISitecoreRepository
     {
-        public string GetField(string fieldName, ItemWrapper item, string parameters)
+        public string GetFieldValue(string fieldName, ItemWrapper item, string parameters)
         {
-            return item.Fields[fieldName].Value + parameters;
+            return fieldName + parameters;
         }
 
-        public string GetField(string fieldName, ItemWrapper item)
+        public string GetFieldValue(string fieldName, ItemWrapper item)
         {
-            return item.Fields[fieldName].Value;
+            return fieldName;
+        }
+
+        public bool FieldExists(string fieldName, ItemWrapper item)
+        {
+            if (!String.IsNullOrEmpty(fieldName))
+            {
+                return true;
+            }
+
+            return false;
         }
     }
 }
