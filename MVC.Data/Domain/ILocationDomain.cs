@@ -1,4 +1,6 @@
-﻿using MVC.Data.Wrappers;
+﻿using MVC.Data.Models;
+using Sitecore.Data.Items;
+using Sitecore.Mvc.Presentation;
 using System;
 using System.Collections.Generic;
 namespace MVC.Data.Domain
@@ -6,8 +8,8 @@ namespace MVC.Data.Domain
     public interface ILocationDomain
     {
         string GetBackground();
-        MVC.Data.Models.Location GetLocation(ItemWrapper item, System.Collections.Generic.Dictionary<string, string> parameterDictionary);
-        MVC.Data.Models.Location GetLocation(ItemWrapper item);
+        Location GetLocation(IItemWrapper item, Dictionary<string, string> parameterDictionary);
+        Location GetLocation(IItemWrapper item);
         string GetFieldParameters(string fieldName, Dictionary<string, string> parameterDictionary);
     }
 }

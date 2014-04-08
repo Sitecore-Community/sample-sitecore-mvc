@@ -234,6 +234,7 @@
     <Content Include="Views\Circuit\Featured.cshtml" />
     <Content Include="Views\Driver\Featured.cshtml" />
     <Content Include="Views\Location\Featured.cshtml" />
+    <Content Include="Views\Shared\_NoDatasource.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Start\" />

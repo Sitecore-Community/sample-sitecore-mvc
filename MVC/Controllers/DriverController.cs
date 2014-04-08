@@ -1,5 +1,4 @@
 ﻿using MVC.Data.Repositories;
-using MVC.Data.Wrappers;
 using Sitecore.Mvc.Presentation;
 using System;
 using System.Collections.Generic;

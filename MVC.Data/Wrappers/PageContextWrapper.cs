@@ -1,39 +1,28 @@
-﻿using Sitecore.Mvc.Presentation;
+﻿using Sitecore.Data.Items;
+using Sitecore.Mvc.Presentation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MVC.Data.Wrappers
+namespace Sitecore.MVC.Presentation
 {
-    public class PageContextWrapper
+    public class PageContextWrapper : IPageContext
     {
-        PageContext _pageContext;
-
-        public PageContextWrapper()
+        public IItemWrapper Current
         {
-            if (PageContext.CurrentOrNull != null)
+            get
             {
-                _pageContext = PageContext.CurrentOrNull;
+                return new ItemWrapper(PageContext.CurrentOrNull.Item);
             }
         }
 
-        private bool _isPageEditor;
         public bool IsPageEditor
         {
             get
             {
-                if (_pageContext != null)
-                {
-                    _isPageEditor = Sitecore.Context.PageMode.IsPageEditor;
-                }
-
-                return _isPageEditor;
-            }
-            set
-            {
-                _isPageEditor = value;
+                return Sitecore.Context.PageMode.IsPageEditor;
             }
         }
         

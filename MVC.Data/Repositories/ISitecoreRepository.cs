@@ -1,4 +1,5 @@
-﻿using MVC.Data.Wrappers;
+﻿using Sitecore.Data.Items;
+using Sitecore.Mvc.Presentation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,8 +10,8 @@ namespace MVC.Data.Repositories
 {
     public interface ISitecoreRepository
     {
-        string GetFieldValue(string fieldName, ItemWrapper item, string parameters);
-        string GetFieldValue(string fieldName, ItemWrapper item);
-        bool FieldExists(string fieldName, ItemWrapper item);
+        string GetFieldValue(string fieldName, IItemWrapper item, string parameters);
+        string GetFieldValue(string fieldName, IItemWrapper item);
+        bool FieldExists(string fieldName, IItemWrapper item);
     }
 }

@@ -2,17 +2,18 @@
 using Sitecore.Data;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
+using Sitecore.Mvc.Presentation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MVC.Data.Wrappers
+namespace Sitecore.Data.Items
 {
-    public class ItemWrapper
+    // TODO: Add an interface
+    public class ItemWrapper : IItemWrapper
     {
-        public Item Item;
         public ItemWrapper(Item item)
         {
             Item = item;
@@ -22,56 +23,21 @@ namespace MVC.Data.Wrappers
         {
         }
 
-        private string _displayName;
+        public Item Item { get; set; }
+
         public string DisplayName
         {
             get
             {
-                if (Item != null)
-                {
-                    _displayName = Item.DisplayName;
-                }
-                return _displayName;
-            }
-            set
-            {
-                _displayName = value;
+                return Item.DisplayName;
             }
         }
 
-        private ID _templateID;
         public ID TemplateID
         {
             get
             {
-                if (Item != null)
-                {
-                    _templateID = Item.TemplateID;
-                }
-
-                return _templateID;
-            }
-            set
-            {
-                _templateID = value;
-            }
-        }
-
-        private FieldCollection _fields;
-        public FieldCollection Fields
-        {
-            get
-            {
-                if (Item != null)
-                {
-                    _fields = Item.Fields;
-                }
-
-                return _fields;
-            }
-            set
-            {
-                _fields = value;
+                return Item.TemplateID;
             }
         }
     }
