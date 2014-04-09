@@ -28,7 +28,7 @@ namespace MVC.Data.Domain
         /// </summary>
         /// <param name="item"></param>
         /// <returns></returns>
-        public Location GetLocation(IItemWrapper item)
+        public Location GetLocation(IItem item)
         {
             return GetLocation(item, null);
         }
@@ -41,7 +41,7 @@ namespace MVC.Data.Domain
         /// <param name="item"></param>
         /// <param name="parametersDictionary"></param>
         /// <returns></returns>
-        public Location GetLocation(IItemWrapper item, Dictionary<string, string> parametersDictionary)
+        public Location GetLocation(IItem item, Dictionary<string, string> parametersDictionary)
         {
             Location location = null;
             
@@ -107,7 +107,7 @@ namespace MVC.Data.Domain
         /// <param name="fieldName"></param>
         /// <param name="parameters"></param>
         /// <returns></returns>
-        public string GetField(string fieldName, IItemWrapper item, Dictionary<string, string> parameters)
+        public string GetField(string fieldName, IItem item, Dictionary<string, string> parameters)
         {
             if (item != null)
             {

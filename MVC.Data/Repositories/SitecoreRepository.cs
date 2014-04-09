@@ -15,17 +15,17 @@ namespace MVC.Data.Repositories
     /// </summary>
     public class SitecoreRepository : ISitecoreRepository
     {
-        public string GetFieldValue(string fieldName, IItemWrapper item, string parameters)
+        public string GetFieldValue(string fieldName, IItem item, string parameters)
         {
             return FieldRenderer.Render(item.Item, fieldName, parameters);
         }
 
-        public string GetFieldValue(string fieldName, IItemWrapper item)
+        public string GetFieldValue(string fieldName, IItem item)
         {
             return FieldRenderer.Render(item.Item, fieldName);
         }
     
-        public bool FieldExists(string fieldName, IItemWrapper item)
+        public bool FieldExists(string fieldName, IItem item)
         {
             if (item.Item[fieldName] != null)
             {

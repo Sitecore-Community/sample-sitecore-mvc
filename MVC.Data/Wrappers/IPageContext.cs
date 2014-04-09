@@ -8,7 +8,7 @@ namespace Sitecore.MVC.Presentation
 {
     public interface IPageContext
     {
-        IItemWrapper Current { get; }
+        IItem Current { get; }
         bool IsPageEditor { get; }
     }
 }

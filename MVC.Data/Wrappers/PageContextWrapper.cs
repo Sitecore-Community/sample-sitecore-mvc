@@ -10,7 +10,7 @@ namespace Sitecore.MVC.Presentation
 {
     public class PageContextWrapper : IPageContext
     {
-        public IItemWrapper Current
+        public IItem Current
         {
             get
             {

@@ -8,8 +8,8 @@ namespace MVC.Data.Domain
     public interface ILocationDomain
     {
         string GetBackground();
-        Location GetLocation(IItemWrapper item, Dictionary<string, string> parameterDictionary);
-        Location GetLocation(IItemWrapper item);
+        Location GetLocation(IItem item, Dictionary<string, string> parameterDictionary);
+        Location GetLocation(IItem item);
         string GetFieldParameters(string fieldName, Dictionary<string, string> parameterDictionary);
     }
 }

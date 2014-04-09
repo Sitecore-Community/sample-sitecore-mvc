@@ -10,8 +10,8 @@ namespace MVC.Data.Repositories
 {
     public interface ISitecoreRepository
     {
-        string GetFieldValue(string fieldName, IItemWrapper item, string parameters);
-        string GetFieldValue(string fieldName, IItemWrapper item);
-        bool FieldExists(string fieldName, IItemWrapper item);
+        string GetFieldValue(string fieldName, IItem item, string parameters);
+        string GetFieldValue(string fieldName, IItem item);
+        bool FieldExists(string fieldName, IItem item);
     }
 }

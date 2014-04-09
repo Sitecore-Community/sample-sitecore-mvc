@@ -41,7 +41,7 @@ namespace MVC.Tests.Domain
         [TestMethod()]
         public void GetLocation_NullTemplate()
         {
-            var item = Mock.Of<IItemWrapper>();
+            var item = Mock.Of<IItem>();
 
             var repository = Mock.Of<ISitecoreRepository>();
 

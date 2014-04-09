@@ -1,10 +1,11 @@
 <%@Application Language='C#' Inherits="Sitecore.Web.Application" %>
 
 <script runat="server">
-  public void Application_Start() {
+  public void Application_Start() {      
+      
       BootstrapContainer();      
   }
-  
+
   private static Castle.Windsor.IWindsorContainer container;
 
   public static void BootstrapContainer()

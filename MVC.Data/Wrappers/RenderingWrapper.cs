@@ -19,7 +19,7 @@ namespace Sitecore.Mvc.Presentation
             _rendering = rendering;
         }
 
-        public IItemWrapper Item
+        public IItem Item
         {
             get
             {

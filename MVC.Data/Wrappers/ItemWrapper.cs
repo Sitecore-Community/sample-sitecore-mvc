@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 namespace Sitecore.Data.Items
 {
     // TODO: Add an interface
-    public class ItemWrapper : IItemWrapper
+    public class ItemWrapper : IItem
     {
         public ItemWrapper(Item item)
         {
