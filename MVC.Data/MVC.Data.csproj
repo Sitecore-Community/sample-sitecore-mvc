@@ -61,9 +61,9 @@
     <Compile Include="Repositories\SitecoreRepository.cs" />
     <Compile Include="ViewModels\DriverViewModel.cs" />
     <Compile Include="ViewModels\LocationViewModel.cs" />
+    <Compile Include="Wrappers\IItem.cs" />
     <Compile Include="Wrappers\IRenderingWrapper.cs" />
     <Compile Include="Wrappers\RenderingWrapper.cs" />
-    <Compile Include="Wrappers\IItemWrapper.cs" />
     <Compile Include="Wrappers\IPageContext.cs" />
     <Compile Include="Wrappers\IRenderingContext.cs" />
     <Compile Include="Wrappers\ItemWrapper.cs" />
