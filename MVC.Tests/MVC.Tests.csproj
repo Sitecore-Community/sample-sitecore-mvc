@@ -117,6 +117,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\CircuitControllerTest.cs" />
     <Compile Include="Controllers\LocationControllerTest.cs" />
     <Compile Include="Domain\LocationDomainTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
