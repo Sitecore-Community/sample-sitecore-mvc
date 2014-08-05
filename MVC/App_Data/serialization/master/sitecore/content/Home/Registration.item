@@ -7,7 +7,7 @@ parent: {110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}
 name: Registration
 master: {00000000-0000-0000-0000-000000000000}
 template: {B57DB68C-6970-453A-AD0D-089E190344CA}
-templatekey: Registration Form
+templatekey: Registration
 
 ----version----
 language: en

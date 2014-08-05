@@ -1,25 +1,25 @@
 ----item----
 version: 1
-id: {600F68DE-89CD-42F6-A472-D8F3EFE5EA9F}
+id: {0F3752F5-C599-42B6-8368-42517187014B}
 database: master
-path: /sitecore/layout/Placeholder Settings/rightcol
-parent: {1CE3B36C-9B0C-4EB5-A996-BFCB4EAA5287}
-name: rightcol
+path: /sitecore/layout/Renderings/MVC Tutorial/Content/Content
+parent: {E9D23FE5-EE9D-4F65-A20D-2CE7804BE03C}
+name: Content
 master: {00000000-0000-0000-0000-000000000000}
-template: {5C547D4E-7111-4995-95B0-6B561751BF2E}
-templatekey: Placeholder
+template: {99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}
+templatekey: View rendering
 
 ----field----
-field: {7256BDAB-1FD2-49DD-B205-CB4873D2917C}
-name: Placeholder Key
-key: placeholder key
-content-length: 8
+field: {51B435BC-F7B9-478A-9C51-52916AF96FF5}
+name: Path
+key: path
+content-length: 29
 
-rightcol
+/Views/layouts/Content.cshtml
 ----version----
 language: en
 version: 1
-revision: 27aa2889-fa0e-44fa-bd54-f97d53df0605
+revision: 81b3a69a-7cc9-4d4e-9e77-a0e76a163e6a
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -27,21 +27,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20140130T153436
+20140130T154150
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-27aa2889-fa0e-44fa-bd54-f97d53df0605
+81b3a69a-7cc9-4d4e-9e77-a0e76a163e6a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140130T153436:635266928761366624
+20140805T095056:635428290566436376
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

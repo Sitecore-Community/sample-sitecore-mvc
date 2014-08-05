@@ -30,20 +30,6 @@ key: __icon
 content-length: 22
 
 Network/32x32/home.png
-----field----
-field: {B03569B1-1534-43F2-8C83-BD064B7D782C}
-name: __Renderers
-key: __renderers
-content-length: 0
-
-
-----field----
-field: {DEC8D2D5-E3CF-48B6-A653-8E69E2716641}
-name: __Security
-key: __security
-content-length: 0
-
-
 ----version----
 language: da
 version: 1
@@ -157,20 +143,6 @@ language: en
 version: 1
 revision: 2c965e84-af66-458c-bae4-83e840ba2f1b
 
-----field----
-field: {9541E67D-CE8C-4225-803D-33F7F29F09EF}
-name: __Short description
-key: __short description
-content-length: 0
-
-
-----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
-
-sitecore\admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
