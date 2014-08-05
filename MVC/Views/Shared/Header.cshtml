@@ -1,0 +1,13 @@
+﻿@model RenderingModel
+@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc;
+
+
+<div class="row header">
+    <div class="col-md-3">
+        <div class="SpotContentImage">
+            @Html.Sitecore().Field("_brandLogo")
+            <h4>@Html.Sitecore().Field("_brandStrapLine")</h4>
+        </div>        
+    </div>
+</div>

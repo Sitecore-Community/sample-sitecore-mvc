@@ -1,0 +1,15 @@
+﻿@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc;
+@model MVC.Data.ViewModels.RegisterViewModel
+
+<div class="container">
+    <div class="row centered-form">
+        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+  
+            <h3>Registration Complete</h3>
+            
+            <h5>Thank you for registering @Html.Raw(Model.CustomerContactDetails == null ? "" : Model.CustomerContactDetails.FirstName)</h5>
+
+        </div>
+    </div>
+</div>

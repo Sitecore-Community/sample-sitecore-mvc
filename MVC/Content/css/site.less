@@ -1,0 +1,91 @@
+﻿@import "global.less";
+@import "themes/bootstrap-custom/bootstrap.less";
+
+@screen-xs-max: (@screen-sm-min - 1);
+@screen-sm-max: (@screen-md-min - 1);
+@screen-md-max: (@screen-lg-min - 1);
+ 
+@desktop:   ~"(min-width: @screen-md-min) and (max-width: @screen-md-max)";
+@tablet:    ~"(min-width: @screen-sm-min) and (max-width: @screen-sm-max)";
+@tabletUp:    ~"(min-width: @{screen-sm-min})";
+@desktopUp:    ~"(min-width: @{screen-md-min})";
+
+.highlight
+{
+    overflow: hidden;
+    padding: 10px;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    margin: 0 0 10px 0;
+}
+
+.highlight a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.highlight a:hover {
+    text-decoration: none;
+}
+
+.highlight h3 {
+    margin-top: 10px;
+}
+
+.imageLeft {
+    float: left;
+    padding: 0 20px 20px 0;
+}
+
+.header {
+    margin-bottom:15px;
+    border-bottom: 2px solid black;
+}
+
+.spotUnit {
+  padding: 20px;
+  line-height: 1.428571429;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.ListElement {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  padding: 10px;
+  line-height: 1.428571429;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  border-left: 4px solid #dddddd;
+}
+    .ListElement img {
+        max-width: 150px;
+        height:100px;
+    }
+    .ListElement:hover {
+       
+      /*outline: thin dotted whitesmoke;
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px;*/
+      text-decoration: none;
+      cursor: pointer;
+      border-left: 4px solid #900f0f;
+    }
+.ListElementShowAll {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.searchBox {
+    margin-top: 7px;
+}
+
+.centered-form{
+	margin-top: 60px;
+}
+
+.centered-form .panel{
+	background: rgba(255, 255, 255, 0.8);
+}

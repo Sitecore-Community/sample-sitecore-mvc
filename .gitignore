@@ -23,8 +23,7 @@
 /MVC.Data/bin/Release
 /MVC/bin/MVC.Tutorial.dll
 /MVC/bin/MVC.Tutorial.pdb
-/Libraries/Sitecore.Kernel.dll
-/Libraries/Sitecore.Mvc.dll
+/Libraries/*.dll
 /MVC/bin/Castle.Core.dll
 /MVC/bin/Castle.Core.xml
 /MVC/bin/Castle.Windsor.dll
@@ -39,3 +38,14 @@
 /MVC/bin/Sitecore.Mvc.dll
 /packages
 /MVC.Data/bin/Debug/MVC.Data.dll
+obj/
+/build
+[Rr]elease*/
+_ReSharper*/
+[Tt]est[Rr]esult*
+*.vssscc
+$tf*/
+/packages
+/Images
+/Website/Local Disk
+*$recycle.bin*

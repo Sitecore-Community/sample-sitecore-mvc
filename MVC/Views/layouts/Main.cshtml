@@ -1,7 +1,14 @@
-﻿@{
+﻿@using Sitecore.Mvc
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <div class="container">
+    
+    <header>
+        @Html.Sitecore().ViewRendering("/views/Shared/Header", new { DataSource = "/sitecore/content/Home" })
+        @Html.Sitecore().ViewRendering("/views/Shared/Navigation", new { DataSource = "/sitecore/content/Home" } ) 
+    </header>
+
     @Html.Sitecore().Placeholder("main")
 </div>

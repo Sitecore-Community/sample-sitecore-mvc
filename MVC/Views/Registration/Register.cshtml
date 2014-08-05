@@ -1,0 +1,71 @@
+﻿@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc;
+@model MVC.Data.ViewModels.RegisterViewModel
+
+<div class="container">
+    <div class="row centered-form">
+        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Your Account Details</h3>
+                    <div class="panel-body">
+                        @using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post))
+                        {
+                        
+                            @Html.AntiForgeryToken()
+                            @Html.Sitecore().FormHandler("RegistrationForm", "Submit")
+
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        
+                                        @Html.TextBoxFor(x => x.CustomerContactDetails.FirstName, new {@placeholder="First Name", @class="form-control input-lg"})
+                                        @Html.ValidationMessageFor(x => x.CustomerContactDetails.FirstName, null, new {@class="clearfix pull-left bg-danger"})
+
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        
+                                        @Html.TextBoxFor(x => x.CustomerContactDetails.LastName, new {@placeholder="Last Name", @class="form-control input-lg"})
+                                        @Html.ValidationMessageFor(x => x.CustomerContactDetails.LastName, null, new {@class="clearfix pull-left bg-danger"})
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                
+                                @Html.TextBoxFor(x => x.CustomerContactDetails.EmailAddress, new {@placeholder="Email Address", @class="form-control input-lg"})
+                                @Html.ValidationMessageFor(x => x.CustomerContactDetails.EmailAddress, null, new {@class="clearfix pull-left bg-danger"})
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        
+                                        @Html.TextBoxFor(x => x.CustomerContactDetails.Password, new {@placeholder="Password", @class="form-control input-lg"})
+                                        @Html.ValidationMessageFor(x => x.CustomerContactDetails.Password, null, new {@class="clearfix pull-left bg-danger"})
+
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        
+                                        @Html.TextBoxFor(x => x.CustomerContactDetails.ConfirmationPassword, new {@placeholder="Confirm Password", @class="form-control input-lg"})
+                                        @Html.ValidationMessageFor(x => x.CustomerContactDetails.ConfirmationPassword, null, new {@class="clearfix pull-left bg-danger"})
+
+                                    </div>
+                                </div>
+                            </div>
+			    			
+                            <input type="submit" value="Register" class="btn-lg btn-primary btn-block">
+			    		
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

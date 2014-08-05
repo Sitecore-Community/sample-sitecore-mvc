@@ -1,0 +1,10 @@
+﻿@model MVC.Data.Models.Search
+@using Sitecore.Mvc;
+
+@using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post, new { @class = "searchBox pull-right" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.Sitecore().FormHandler("Search", "Submit")
+    @Html.TextBoxFor(x => x.SearchTerm, new {@placeholder="Search", @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.SearchTerm, null, new {@class="bg-danger"})
+}

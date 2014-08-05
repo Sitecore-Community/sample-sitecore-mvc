@@ -9,7 +9,7 @@ NOTE: This project shows a variety of examples (see 'What is included?') and pro
 ## Installation
 1. Install a blank instance of Sitecore (this project has been tested with Sitecore 7.1 rev. 140130, but you should be able to use later verisons)
 2. Download the Sample Sitecore MVC project and put it in a location outside the site web root (e.g. C:\Projects)
-3. On the same level as the project folders (MVC, MVC.Data, etc), create a **Libraries** folder and copy the Sitecore.Kernel.dll and Sitecore.MVC.dll from your fresh instance of Sitecore
+3. On the same level as the project folders (MVC, MVC.Data, etc), create a **Libraries** folder and copy the Sitecore.Kernel.dll, Sitecore.MVC.dll, and Sitecore.Logging.dll from your fresh instance of Sitecore
 4. Open MVC.sln and check that it builds
 5. Set up a **Publish Profile** to do a File Deploy to your Sitecore web root (or write a post-build script). To create a Publish Profile:
   1. Right-click on the MVC.Tutorial project and choose **Publish...*
@@ -19,14 +19,21 @@ NOTE: This project shows a variety of examples (see 'What is included?') and pro
   5. Click 'Next' - if you wish to debug the solution, make sure the dropdown is set to 'Debug'
   6. Click 'Publish'
 6. The solution contains a **serialization** folder under App_Data - you can either move the serialization folder into the location pointed to by the SerializationFolder setting OR change the SerializationFolder setting to the App_Data/serialization location:
-
 ```xml
 <setting name="SerializationFolder" value="$(dataFolder)/serialization" />
 ```
 7. Browse to http://{yoursite}/Unicorn.aspx (for more information about Unicorn, visit https://github.com/kamsar/Unicorn)
-8. Hit the **Perform Initial Serialization of Default Configuration** button - this will turn the serialized .item files into items in the Sitecore tree
+8. Hit the **Sync Default Configuration Now** button - this will turn the serialized .item files into items in the Sitecore tree
 9. Log into Sitecore - you should see items beneath /sitecore/content/Home - e.g. 'silverstone'
 10. Perform a smart publish, and browse to http://{yoursite}
+
+##NOTES:
+- For Data Annotations to work, ensure you have the follow key's in the appSettings section of your web.config;
+```xml
+      <add key="ClientValidationEnabled" value="true" />
+      <add key="UnobtrusiveJavaScriptEnabled" value="true" />
+```
+- Ensure you have the correct assembly bindings within your web.config for WebGrease (v1.3)
 
 ## What is included?
 
