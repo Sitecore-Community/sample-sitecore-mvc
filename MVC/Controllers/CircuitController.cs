@@ -1,17 +1,8 @@
 ﻿using MVC.Data.Models;
-using Sitecore.Links;
-using Sitecore.Mvc.Configuration;
 using Sitecore.Mvc.Presentation;
-using Sitecore.Web.UI.WebControls;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
 using System.Web.Mvc;
 
-namespace MVC.Tutorial.Controllers
+namespace MVC.Web.Controllers
 {
     public class CircuitController : Controller
     {

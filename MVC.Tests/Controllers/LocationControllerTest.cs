@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using MVC.Tutorial.Controllers;
+using MVC.Web.Controllers;
 using MVC.Data.Repositories;
 using MVC.Data.Domain;
 using System.Web.Mvc;

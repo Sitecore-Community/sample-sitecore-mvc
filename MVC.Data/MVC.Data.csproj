@@ -30,6 +30,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Sitecore.Buckets">
+      <HintPath>..\Libraries\Sitecore.Buckets.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch">
+      <HintPath>..\Libraries\Sitecore.ContentSearch.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.ContentSearch.Linq">
+      <HintPath>..\Libraries\Sitecore.ContentSearch.Linq.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Kernel">
       <HintPath>..\Libraries\Sitecore.Kernel.dll</HintPath>
     </Reference>
@@ -37,6 +46,8 @@
       <HintPath>..\Libraries\Sitecore.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
@@ -47,6 +58,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constants.cs" />
+    <Compile Include="Models\CustomerContact.cs" />
+    <Compile Include="Models\CustomerDetails.cs" />
+    <Compile Include="Models\CustomSearchResult.cs" />
+    <Compile Include="Models\Facet.cs" />
+    <Compile Include="Models\FacetValue.cs" />
+    <Compile Include="Models\Search.cs" />
     <Compile Include="References.cs" />
     <Compile Include="Domain\ILocationDomain.cs" />
     <Compile Include="Domain\LocationDomain.cs" />
@@ -59,8 +77,12 @@
     <Compile Include="Repositories\IDriverRepository.cs" />
     <Compile Include="Repositories\ISitecoreRepository.cs" />
     <Compile Include="Repositories\SitecoreRepository.cs" />
+    <Compile Include="Services\ISearchService.cs" />
+    <Compile Include="Services\SearchService.cs" />
     <Compile Include="ViewModels\DriverViewModel.cs" />
     <Compile Include="ViewModels\LocationViewModel.cs" />
+    <Compile Include="ViewModels\RegisterViewModel.cs" />
+    <Compile Include="ViewModels\SearchResultViewModel.cs" />
     <Compile Include="Wrappers\IItem.cs" />
     <Compile Include="Wrappers\IRenderingWrapper.cs" />
     <Compile Include="Wrappers\RenderingWrapper.cs" />

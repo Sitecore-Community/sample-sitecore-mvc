@@ -1,0 +1,11 @@
+﻿@model RenderingModel
+@using MVC.Tutorial
+
+<div class="highlight" style="background: #@Model.Rendering.Parameters["Background"]">
+    @Html.Sitecore().Field("Image", Model.Item, new { mw = 300, mh = 400, hspace = 10, vspace = 10, @class = "imageLeft", DisableWebEdit = true })
+    <p><strong>Make:</strong> @Html.Sitecore().Field("Make", Model.Item)</p>
+    <p><strong>Model:</strong> @Html.Sitecore().Field("Model", Model.Item)</p>
+    @Html.Sitecore().Field("Description", Model.Item)
+    <p><strong>Posted:</strong> @Html.Sitecore().Field("__Created", Model.Item, new { format = "dd/MM/yyyy" })</p>
+    <p>@Html.Sitecore().Field("Website", Model.Item, new { text = "Read more about this car" })</p>
+</div>  

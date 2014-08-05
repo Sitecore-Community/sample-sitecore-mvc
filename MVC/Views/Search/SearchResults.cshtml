@@ -1,0 +1,51 @@
+﻿@using Sitecore.Links;
+
+@model MVC.Data.ViewModels.SearchResultViewModel
+
+<H4>Search Results</H4>
+
+<div class="col-xs-2 spotUnit">
+    <h5>Filters</h5>
+
+    @foreach (var category in Model.FacetCategories)
+    {
+        foreach(var facetValue in category.Values)
+        {
+            <div class="btn btn-primary clearfix" style="height:25px;margin-bottom:5px; padding:5px; width:90%;">
+                @facetValue.Name (@facetValue.Count)
+
+            </div>
+        }
+    }
+
+</div>
+<div class="col-xs-9">
+    @foreach (var childItem in Model.ItemList)
+    {
+
+        var options = (UrlOptions) UrlOptions.DefaultOptions.Clone();
+        options.AddAspxExtension = false;
+        var contextItem = Sitecore.Context.Database.GetItem(childItem.ItemId);
+
+        var link = LinkManager.GetItemUrl(contextItem, options);    
+                
+        <a href="@link">
+            <div class="ListElement">   
+      
+                <div class="col-xs-12">
+                    <h4 class="pull-left">@childItem.Name
+                        <small class="clearfix" style="clear:both;">@link</small>
+                    </h4>
+                </div>
+                <div class="col-xs-12">
+                    <small>Content: @childItem.PageStuff</small>
+                </div>
+                <div class="col-xs-12">
+                    <small>Highlight Result: @childItem.HighlightedSearch</small>
+                </div>
+        
+            </div>
+        </a>
+        
+    }
+</div>

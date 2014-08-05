@@ -1,0 +1,13 @@
+﻿@model RenderingModel
+
+<!-- This rendering uses Sitecore's default RenderingModel -->
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="inner">
+            <h1>@Html.Sitecore().Field("Title")</h1>
+            @Html.Sitecore().Field("Image", new { mw = 300, mh = 200, @class = "imageLeft" })
+            @Html.Sitecore().Field("Text")
+         </div>
+    </div>
+</div>

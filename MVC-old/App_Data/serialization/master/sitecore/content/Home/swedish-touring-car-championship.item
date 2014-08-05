@@ -1,0 +1,79 @@
+----item----
+version: 1
+id: {BE47EE78-FC51-4D24-8B5C-B670645C9032}
+database: master
+path: /sitecore/content/Home/swedish-touring-car-championship
+parent: {110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}
+name: swedish-touring-car-championship
+master: {00000000-0000-0000-0000-000000000000}
+template: {EF31F02F-A0CB-42C1-98A1-A5256B4AE2C0}
+templatekey: Race Series
+
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+900
+----version----
+language: en
+version: 1
+revision: 6745ab93-9d67-4759-9d2b-96b1d9256dc7
+
+----field----
+field: {2C84B858-A1DD-47B5-995B-A9739878C22A}
+name: Name
+key: name
+content-length: 32
+
+Swedish Touring Car Championship
+----field----
+field: {E854AE62-160F-4E5C-A041-8C142E584783}
+name: Text
+key: text
+content-length: 269
+
+<p>Swedish Touring Car Championship (STCC) was a touring car racing series based in Sweden, but also with rounds in Norway. They began operating in 1996, heavily influenced by the British Touring Car Championship and the success of BTCC racing on Swedish television</p>
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140225T140953
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+6745ab93-9d67-4759-9d2b-96b1d9256dc7
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140304T163017:635295474179313389
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

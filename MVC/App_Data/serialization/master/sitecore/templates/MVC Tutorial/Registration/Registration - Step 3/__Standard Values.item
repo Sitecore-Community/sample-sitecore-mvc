@@ -1,0 +1,72 @@
+----item----
+version: 1
+id: {13F77DCD-944A-454B-9F58-BB9EE0D9F49E}
+database: master
+path: /sitecore/templates/MVC Tutorial/Registration/Registration - Step 3/__Standard Values
+parent: {15F89E10-32A9-46F5-8A8C-23D5A668E3C6}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {15F89E10-32A9-46F5-8A8C-23D5A668E3C6}
+templatekey: Registration - Step 3
+
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 38
+
+applications/32x32/form_green_edit.png
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 367
+
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{AC02FC2A-78A0-4F83-B22F-22AB9D8C738B}"><r id="{0A1A291B-A09A-4E03-8581-7DED31207487}" ph="navigationsearch" uid="{162CBFBB-67FB-45D4-9D28-A5DDE9B4B1F2}" /><r id="{DC2EFF16-83BD-41C5-AAFA-F456903ED03D}" ph="main" uid="{A7FFF800-2762-48BA-ADFB-3591A9B65490}" /></d></r>
+----version----
+language: en
+version: 1
+revision: 80c6a3a6-fb68-4d06-a807-badd6e9b7dfa
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140805T113121
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+80c6a3a6-fb68-4d06-a807-badd6e9b7dfa
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140805T113827:635428355078641844
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

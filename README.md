@@ -9,7 +9,7 @@ NOTE: This project shows a variety of examples (see 'What is included?') and pro
 ## Installation
 1. Install a blank instance of Sitecore (this project has been tested with Sitecore 7.1 rev. 140130, but you should be able to use later verisons)
 2. Download the Sample Sitecore MVC project and put it in a location outside the site web root (e.g. C:\Projects)
-3. On the same level as the project folders (MVC, MVC.Data, etc), create a **Libraries** folder and copy the Sitecore.Kernel.dll and Sitecore.MVC.dll from your fresh instance of Sitecore
+3. On the same level as the project folders (MVC, MVC.Data, etc), create a **Libraries** folder and copy the Sitecore.Kernel.dll, Sitecore.MVC.dll, and Sitecore.Logging.dll from your fresh instance of Sitecore
 4. Open MVC.sln and check that it builds
 5. Set up a **Publish Profile** to do a File Deploy to your Sitecore web root (or write a post-build script). To create a Publish Profile:
   1. Right-click on the MVC.Tutorial project and choose **Publish...*

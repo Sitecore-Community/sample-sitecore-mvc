@@ -1,0 +1,61 @@
+﻿@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc;
+@model MVC.Data.ViewModels.RegisterViewModel
+
+<div class="container">
+    
+    <h3>Now we need some more information @Model.CustomerContactDetails.FirstName</h3>
+<div class="row centered-form">
+        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+        	<div class="panel panel-default">
+        		<div class="panel-heading">
+			    	<h3 class="panel-title">Your Information</h3>
+                    <div class="panel-body">
+                    
+                        @using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post))
+                        {
+                        
+                            @Html.AntiForgeryToken()
+                            @Html.Sitecore().FormHandler("RegistrationForm", "SubmitStep2")
+
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        
+                                        @Html.TextBoxFor(x => x.CustomerDetails.Age, new {@placeholder="Age", @class="form-control input-lg"})
+                                        @Html.ValidationMessageFor(x => x.CustomerDetails.Age, null, new {@class="clearfix pull-left bg-danger"})
+
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        
+                                        @Html.TextBoxFor(x => x.CustomerDetails.Sex, new {@placeholder="Sex (Male or Female)", @class="form-control input-lg"})
+                                        @Html.ValidationMessageFor(x => x.CustomerDetails.Sex, null, new {@class="clearfix pull-left bg-danger"})
+
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        
+                                        @Html.TextBoxFor(x => x.CustomerDetails.PlaceOfBirth, new {@placeholder="Place of Birth", @class="form-control input-lg"})
+                                        @Html.ValidationMessageFor(x => x.CustomerDetails.PlaceOfBirth, null, new {@class="clearfix pull-left bg-danger"})
+
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            @Html.HiddenFor(x => x.CustomerContactDetails.FirstName)
+                            @Html.HiddenFor(x => x.CustomerContactDetails.LastName)
+                            @Html.HiddenFor(x => x.CustomerContactDetails.EmailAddress)
+                            @Html.HiddenFor(x => x.CustomerContactDetails.Password)
+                            @Html.HiddenFor(x => x.CustomerContactDetails.ConfirmationPassword)
+			    			
+                            <input type="submit" value="Register" class="btn-lg btn-primary btn-block">
+			    		
+                        }
+                    </div>
+	    		</div>
+    		</div>
+    	</div>
+    </div>

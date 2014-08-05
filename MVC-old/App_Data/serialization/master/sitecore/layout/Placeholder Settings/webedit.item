@@ -1,0 +1,278 @@
+----item----
+version: 1
+id: {809528B1-588A-42A7-93C1-41E73800100A}
+database: master
+path: /sitecore/layout/Placeholder Settings/webedit
+parent: {1CE3B36C-9B0C-4EB5-A996-BFCB4EAA5287}
+name: webedit
+master: {00000000-0000-0000-0000-000000000000}
+template: {5C547D4E-7111-4995-95B0-6B561751BF2E}
+templatekey: Placeholder
+
+----field----
+field: {7256BDAB-1FD2-49DD-B205-CB4873D2917C}
+name: Placeholder Key
+key: placeholder key
+content-length: 7
+
+webedit
+----field----
+field: {14D0728A-82F9-4B01-AB16-1FE1577CEDE2}
+name: Editable
+key: editable
+content-length: 0
+
+
+----version----
+language: da
+version: 1
+revision: 7ac3c20f-7ef3-431b-9aa7-1f9364119cfe
+
+----field----
+field: {87871FF5-1965-46D6-884F-01D6A0B9C4C1}
+name: Description
+key: description
+content-length: 837
+
+<div style="font-size: 0.8em;">
+<p style="margin-top: 0px;">Sitecore 6.4 og nyere udgaver understøtter webedit-placeholderen for kompatibilitet med tidligere udgaver, men udfaser denne funktion.</p>
+<p>Hvis et layout indeholder en placeholder med tasten "webedit", indsætter Sideredigering bjælken Sideredigering i den pågældende placeholder, og bjælken scroller op og ned sammen med siden. <p>Hvis et layout ikke indeholder en placeholder med tasten "webedit", vises sideredigeringsbjælken øverst i browservinduet, når brugeren ruller op og ned igennem den renderede side og giver dermed en bedre brugeroplevelse.</p>
+<p>Formålet med dette definitionselement for webeditplaceholderindstillinger er at forhindre brugere af Sideredigering i at binde præsentationskontroller til "webeditplaceholderen", når den er til stede.</p>
+</div>
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 13
+
+webredigering
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20130926T190901:635158193411626915
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+7ac3c20f-7ef3-431b-9aa7-1f9364119cfe
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20130926T190901:635158193412876603
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: de-DE
+version: 1
+revision: 698f1176-a840-45ff-b79e-b2beffd456a6
+
+----field----
+field: {87871FF5-1965-46D6-884F-01D6A0B9C4C1}
+name: Description
+key: description
+content-length: 899
+
+<div style="font-size: 0.8em;">
+<p style="margin-top: 0px;">Sitecore 6.4 und höher unterstützt den Webedit-Platzhalter für Kompatibilität mit vorangegangenen Versionen, aber missbilligt diese Funktion.</p>
+<p>Wenn ein Layout einen Platzhalter mit dem "Webedit"-Schlüssel enthält, fügt der Page Editor  das Page Editor Ribbon in den Platzhalter ein und der Ribbon scrollt mit der Seite hoch und runter. Wenn ein Layout keinen Platzhalter mit dem "Webedit"- Schlüssel enthält, zeigt der Page Editor das Ribbon immer ganz oben im Browser-Fenster an, wenn der Benutzer hoch und runter durch die gerenderte Seite scrollt und bietet so ein besseres Benutzer Erlebnis.</p>
+<p>Der Zweck dieses Webedit-Platzhalter-Einstellungs-Definitionsitems liegt darin, Page Editor Benutzer davon abzuhalten, Präsentations-Controls mit dem "Webedit" Platzhalter, sofern dieser vorhanden ist, zu verbinden.</p>
+</div>
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 7
+
+WebEdit
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20130926T192853:635158205338197202
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+698f1176-a840-45ff-b79e-b2beffd456a6
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20130926T192853:635158205338509626
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: en
+version: 1
+revision: d8eb48b6-d27d-45b2-9433-e67d6b2b6315
+
+----field----
+field: {87871FF5-1965-46D6-884F-01D6A0B9C4C1}
+name: Description
+key: description
+content-length: 822
+
+<div style="font-size: 0.8em;">
+<p style="margin-top: 0px;">Sitecore 6.4 and later supports the webedit placeholder for compatibility with previous releases, but deprecates this feature.</p>
+<p>If a layout contains a placeholder with the "webedit" key, the Page Editor inserts the Page Editor ribbon into that placeholder, and the ribbon scrolls up and down with the page. If a layout does not contain a placeholder with the "webedit" key, the Page Editor always displays the ribbon at the top of the browser window when the user scrolls up and down through the rendered page thereby providing a better user experience.</p>
+<p>The purpose of this webedit placeholder settings definition item is to prevent Page Editor users from binding presentation controls to the "webedit" placeholder when it is present.</p>
+</div>
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20100713T155300
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+d8eb48b6-d27d-45b2-9433-e67d6b2b6315
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20110316T161910:634358891509744454
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: ja-JP
+version: 1
+revision: 92536f5d-7e85-416c-b042-20dd7c5fdf2b
+
+----field----
+field: {87871FF5-1965-46D6-884F-01D6A0B9C4C1}
+name: Description
+key: description
+content-length: 474
+
+<div style="font-size: 0.8em;">
+<p style="margin-top: 0px;">以前のバージョンとの互換性を保つために Sitecore 6.4 およびそれ以降では 「webedit」 プレースホルダーをサポートしていますが、このフィーチャーは非推奨です。</p>
+<p>レイアウトに 「webedit」 キーのプレースホルダーが含まれる場合は、ページ エディターのリボンをプレースホルダーに挿入し、ページのスクロールと共にリボンが上下します。レイアウトに 「webedit」 キーのプレースホルダーが含まれない場合は、ページ エディターは絶えずブラウザーの上部に表示し、ページのスクロール時に上下しないためユーザー エクスペリエンスが向上します。</p>
+<p>この 「webedit」 プレースホルダー設定アイテムは、ページ エディターのユーザーが誤ってプレゼンテーション コンポーネントを 「webedit」 プレースホルダーにバインドすることを防ぐために存在しています。</p>
+</div>
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 15
+
+ウェブ編集 (webedit)
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20130926T194922:635158217625782065
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+92536f5d-7e85-416c-b042-20dd7c5fdf2b
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20130926T194922:635158217626094489
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

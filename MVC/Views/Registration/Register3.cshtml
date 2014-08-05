@@ -1,0 +1,48 @@
+﻿@using System.Globalization
+@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc;
+@model MVC.Data.ViewModels.RegisterViewModel
+
+<div class="container">
+    <div class="row centered-form">
+        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+  
+            <h3>Confirm Your Details</h3>
+            
+            <h4><strong>Your Account Information</strong></h4>
+            <address>
+                <strong>First Name: </strong>@Html.Raw(Model.CustomerContactDetails == null ? "" : Model.CustomerContactDetails.FirstName)<br>
+                <strong>Last Name: </strong>@Html.Raw(Model.CustomerContactDetails == null ? "" : Model.CustomerContactDetails.LastName)<br>
+                <strong>Email Address: </strong>@Html.Raw(Model.CustomerContactDetails == null ? "" : Model.CustomerContactDetails.EmailAddress)<br>
+            </address>
+            
+            <h4><strong>Your Personal Information</strong></h4>
+            <address>
+                <strong>Age: </strong>@Html.Raw(Model.CustomerDetails == null ? "" : Model.CustomerDetails.Age.ToString(CultureInfo.InvariantCulture))<br>
+                <strong>Sex: </strong>@Html.Raw(Model.CustomerDetails == null ? "" : Model.CustomerDetails.Sex)<br>
+                <strong>Place of Birth: </strong>@Html.Raw(Model.CustomerDetails == null ? "" : Model.CustomerDetails.PlaceOfBirth)<br>
+            </address>
+            
+            @using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post))
+            {
+                        
+                @Html.AntiForgeryToken()
+                @Html.Sitecore().FormHandler("RegistrationForm", "SubmitStep3")
+                            
+                @Html.HiddenFor(x => x.CustomerContactDetails.FirstName)
+                @Html.HiddenFor(x => x.CustomerContactDetails.LastName)
+                @Html.HiddenFor(x => x.CustomerContactDetails.EmailAddress)
+                @Html.HiddenFor(x => x.CustomerContactDetails.Password)
+                @Html.HiddenFor(x => x.CustomerContactDetails.ConfirmationPassword)
+
+                @Html.HiddenFor(x => x.CustomerDetails.Age)
+                @Html.HiddenFor(x => x.CustomerDetails.Sex)
+                @Html.HiddenFor(x => x.CustomerDetails.PlaceOfBirth)
+			    			
+                <input type="submit" value="Register" class="btn-lg btn-primary btn-block">
+			    		
+            }
+
+        </div>
+    </div>
+</div>

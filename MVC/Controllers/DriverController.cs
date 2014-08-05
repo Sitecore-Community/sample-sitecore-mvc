@@ -1,14 +1,7 @@
 ﻿using MVC.Data.Repositories;
-using Sitecore.Mvc.Presentation;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
 using System.Web.Mvc;
 
-namespace MVC.Tutorial.Controllers
+namespace MVC.Web.Controllers
 {
     /// <summary>
     /// The DriverController demonstrates how to use the repository pattern to populate a custom model to allow for

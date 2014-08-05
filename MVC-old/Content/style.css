@@ -1,0 +1,30 @@
+﻿body {
+    color: #111c24;
+}
+
+.highlight
+{
+    overflow: hidden;
+    padding: 10px;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    margin: 0 0 10px 0;
+}
+
+.highlight a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.highlight a:hover {
+    text-decoration: none;
+}
+
+.highlight h3 {
+    margin-top: 10px;
+}
+
+.imageLeft {
+    float: left;
+    padding: 0 20px 20px 0;
+}

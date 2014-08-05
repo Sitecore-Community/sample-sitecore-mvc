@@ -3,21 +3,16 @@ using MVC.Data.Repositories;
 using MVC.Data.ViewModels;
 using Sitecore.Mvc.Presentation;
 using Sitecore.MVC.Presentation;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
 using System.Web.Mvc;
 
-namespace MVC.Tutorial.Controllers
+namespace MVC.Web.Controllers
 {
     public class LocationController : Controller
     {
         /// <summary>
-        /// This project uses Castle Windsor to inject dependencies into the controller. 
-        /// Have a look at <see cref="MVC.Tutorial.IoC.Installers.DefaultInstallers"/> in the MVC.Tutorial project to see Castle Windsor
+        /// This project uses Autofac to inject dependencies into the controller. 
+        /// Have a look at <see cref="App_Start/IocConfig.cs"/> in the MVC.Tutorial project to see Castle Windsor
         /// injecting concrete classes. IPageContext and IRenderingContext are wrappers for Sitecore's RenderingContext and PageContext.
         /// </summary>
         private readonly ILocationDomain _locationDomain;

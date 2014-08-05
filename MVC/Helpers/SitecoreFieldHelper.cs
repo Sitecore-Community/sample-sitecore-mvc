@@ -2,7 +2,7 @@
 using Sitecore.Mvc.Helpers;
 using Sitecore.Data.Items;
 
-namespace MVC.Tutorial
+namespace MVC.Web.Helpers
 {
     /// <summary>
     /// 

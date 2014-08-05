@@ -133,9 +133,9 @@
       <Project>{93b9bb50-f423-44b9-b50d-3dcac0756b17}</Project>
       <Name>MVC.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MVC\MVC.Tutorial.csproj">
-      <Project>{11c0461d-1e81-43c9-b65f-c17e681755da}</Project>
-      <Name>MVC.Tutorial</Name>
+    <ProjectReference Include="..\MVC\MVC.Web.csproj">
+      <Project>{2b755e45-f3ed-4548-aa96-0e5ed7ec7018}</Project>
+      <Name>MVC.Web</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

@@ -1,0 +1,93 @@
+----item----
+version: 1
+id: {01E67B45-7266-4F13-AE01-F56B52253CB5}
+database: master
+path: /sitecore/content/Home/lancia-delta-integrale
+parent: {110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}
+name: lancia-delta-integrale
+master: {00000000-0000-0000-0000-000000000000}
+template: {65232AFF-66AA-4310-B924-6F62BFEA0F27}
+templatekey: Car
+
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+300
+----version----
+language: en
+version: 1
+revision: b2d7b7f5-1daa-46f9-8818-217ffc7a72f6
+
+----field----
+field: {6ADEA341-A53B-4AC4-B9EE-D4A4AA246024}
+name: Model
+key: model
+content-length: 5
+
+Delta
+----field----
+field: {A3A6DDDB-A83C-4F65-98B9-D48EC9F72971}
+name: Make
+key: make
+content-length: 6
+
+Lancia
+----field----
+field: {7CE0E45B-A9EE-475F-BADF-072145B90262}
+name: Description
+key: description
+content-length: 729
+
+<p>The Lancia Delta is a compact luxury car produced by Italian automaker Lancia with the first generation being produced between 1979 and 1994, the second generation running from 1993 until 1999, and the third generation Delta entering production in 2008. It was first shown in Frankfurt Motor Show in 1979.[1] The Delta is best known for its World Rally Championship career in the late 1980s and early 1990s, when it dominated rallying. As they were obliged to by the Group A regulations, Lancia offered road-going versions of these competition cars &mdash; the Lancia Delta HF 4WD and HF Integrale - 5000 of each variant having to be produced before the car could enter competition. In fact, Lancia sold 44,296 Integrales.</p>
+----field----
+field: {52A7F95E-B192-4CEE-A8FD-4B5F29D07112}
+name: Image
+key: image
+content-length: 58
+
+<image mediaid="{2B815A38-BBCB-405D-90F4-A5B06AD69814}" />
+----field----
+field: {49B69934-BA74-485F-A9A2-06DB29856752}
+name: Website
+key: website
+content-length: 77
+
+<link linktype="external" text="Test test test" url="" anchor="" target="" />
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20140203T103957
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b2d7b7f5-1daa-46f9-8818-217ffc7a72f6
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140401T140619:635319579791760242
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

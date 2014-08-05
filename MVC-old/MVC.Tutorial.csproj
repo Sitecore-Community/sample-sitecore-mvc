@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{11C0461D-1E81-43C9-B65F-C17E681755DA}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MVC.Tutorial</RootNamespace>
+    <AssemblyName>MVC.Tutorial</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core">
+      <HintPath>..\packages\Castle.Core.3.3.0\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor">
+      <HintPath>..\packages\Castle.Windsor.3.3.0\lib\net45\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="Kamsar.WebConsole">
+      <HintPath>..\packages\Kamsar.WebConsole.1.2.2.0\lib\net40\Kamsar.WebConsole.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.WindowsAzure.Configuration, Version=1.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.WindowsAzure.ConfigurationManager.1.8.0.0\lib\net35-full\Microsoft.WindowsAzure.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Diagnostics, Version=1.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.StorageClient, Version=1.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WindowsAzure.Storage.1.7.0.0\lib\net35-full\Microsoft.WindowsAzure.StorageClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject">
+      <HintPath>..\packages\Ninject.3.0.1.10\lib\net45-full\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Kernel, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Sitecore\Installations\Sitecore 6.6.0 rev. 130529\Sitecore.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Mvc, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Sitecore.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20715.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unicorn">
+      <HintPath>..\packages\Unicorn.2.0.0\lib\net45\Unicorn.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\CircuitController.cs" />
+    <Compile Include="Controllers\DriverController.cs" />
+    <Compile Include="Controllers\LocationController.cs" />
+    <Compile Include="Helpers\SitecoreFieldHelper.cs" />
+    <Compile Include="IoC\Installers\DefaultInstallers.cs" />
+    <Compile Include="IoC\WindsorControllerFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\style.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="App_Config\Include\Serialization.config" />
+    <Content Include="App_Data\serialization\master\sitecore\content\Home.item" />
+    <Content Include="App_Data\serialization\master\sitecore\content\Home\colin-mcrae.item" />
+    <Content Include="App_Data\serialization\master\sitecore\content\Home\kimi-raikkonen.item" />
+    <Content Include="App_Data\serialization\master\sitecore\content\Home\lancia-delta-integrale.item" />
+    <Content Include="App_Data\serialization\master\sitecore\content\Home\mazda-mx-5.item" />
+    <Content Include="App_Data\serialization\master\sitecore\content\Home\mitsubishi-lancer-evolution-vi.item" />
+    <Content Include="App_Data\serialization\master\sitecore\content\Home\nurburgring.item" />
+    <Content Include="App_Data\serialization\master\sitecore\content\Home\oulton-park.item" />
+    <Content Include="App_Data\serialization\master\sitecore\content\Home\peugot-306.item" />
+    <Content Include="App_Data\serialization\master\sitecore\content\Home\silverstone.item" />
+    <Content Include="App_Data\serialization\master\sitecore\content\Home\swedish-touring-car-championship.item" />
+    <Content Include="App_Data\serialization\master\sitecore\layout\Layouts\MVC Layout.item" />
+    <Content Include="App_Data\serialization\master\sitecore\layout\Renderings\MVC Tutorial.item" />
+    <Content Include="App_Data\serialization\master\sitecore\layout\Renderings\MVC Tutorial\Content.item" />
+    <Content Include="App_Data\serialization\master\sitecore\layout\Renderings\MVC Tutorial\Email.item" />
+    <Content Include="App_Data\serialization\master\sitecore\layout\Renderings\MVC Tutorial\Featured Car.item" />
+    <Content Include="App_Data\serialization\master\sitecore\layout\Renderings\MVC Tutorial\Featured Circuit.item" />
+    <Content Include="App_Data\serialization\master\sitecore\layout\Renderings\MVC Tutorial\Featured Driver.item" />
+    <Content Include="App_Data\serialization\master\sitecore\layout\Renderings\MVC Tutorial\Rating.item" />
+    <Content Include="App_Data\serialization\master\sitecore\layout\Renderings\MVC Tutorial\Spotlight.item" />
+    <Content Include="App_Data\serialization\master\sitecore\layout\Renderings\MVC Tutorial\Three Columns.item" />
+    <Content Include="App_Data\serialization\master\sitecore\media library\Images.item" />
+    <Content Include="App_Data\serialization\master\sitecore\media library\Images\lancia.item" />
+    <Content Include="App_Data\serialization\master\sitecore\media library\Images\Mitsubishi-Lancer-Evolution_röd.item" />
+    <Content Include="App_Data\serialization\master\sitecore\media library\Images\mx5.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Car.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Car\Car Details.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Car\Car Details\Description.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Car\Car Details\Image.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Car\Car Details\Make.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Car\Car Details\Model.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Car\Car Details\Website.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Car\__Standard Values.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Driver.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Driver\Driver.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Driver\Driver\Name.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Driver\Driver\Text.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Home.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Home\Content.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Home\Content\Image.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Home\Content\Text.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Home\Content\Title.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Home\__Standard Values.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Race Circuit.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Race Circuit\Driver.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Race Circuit\Driver\Name.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Race Circuit\Driver\Text.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Race Series.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Race Series\Driver.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Race Series\Driver\Name.item" />
+    <Content Include="App_Data\serialization\master\sitecore\templates\MVC Tutorial\Race Series\Driver\Text.item" />
+    <Content Include="App_Data\serialization\master\sitecore\layout\Models\Car.item" />
+    <Content Include="App_Data\serialization\master\sitecore\layout\Placeholder Settings\content.item" />
+    <Content Include="App_Data\serialization\master\sitecore\layout\Placeholder Settings\leftcol.item" />
+    <Content Include="App_Data\serialization\master\sitecore\layout\Placeholder Settings\main.item" />
+    <Content Include="App_Data\serialization\master\sitecore\layout\Placeholder Settings\middlecol.item" />
+    <Content Include="App_Data\serialization\master\sitecore\layout\Placeholder Settings\rightcol.item" />
+    <Content Include="App_Data\serialization\master\sitecore\layout\Placeholder Settings\webedit.item" />
+    <Content Include="App_Data\serialization\master\sitecore\layout\Models.item" />
+    <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\MVC.pubxml" />
+    <None Include="Properties\PublishProfiles\Sitecore MVC Contrib.pubxml" />
+    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\layouts\Content.cshtml" />
+    <Content Include="Views\layouts\Main.cshtml" />
+    <Content Include="Views\layouts\Spotlight.cshtml" />
+    <Content Include="Views\layouts\ThreeColumns.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\layouts\Featured Car.cshtml" />
+    <Content Include="Views\Circuit\Featured.cshtml" />
+    <Content Include="Views\Driver\Featured.cshtml" />
+    <Content Include="Views\Location\Featured.cshtml" />
+    <Content Include="Views\Shared\_NoDatasource.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Start\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Scripts\jquery-1.9.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MVC.Data\MVC.Data.csproj">
+      <Project>{93b9bb50-f423-44b9-b50d-3dcac0756b17}</Project>
+      <Name>MVC.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52558</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
